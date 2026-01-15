@@ -1,0 +1,440 @@
+body {
+  background-color: black;
+  padding: 0;
+  margin: 0;
+}
+.all_content {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+.hidden {
+  min-height: 100vh;
+  scroll-snap-align: start;
+}
+#home {
+  display: flex;
+  flex-wrap: wrap;
+}
+#about {
+  display: flex;
+  flex-direction: column;
+}
+#project {
+  display: flex;
+  flex-direction: column;
+}
+#contact {
+  display: flex;
+  flex-direction: column;
+}
+.getintouch {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1.5% 5%;
+}
+.details {
+  flex-basis: 500px;
+  color: white;
+  padding-left: 10%;
+  padding-right: 3%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: larger;
+}
+.mailcall {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.mailcall i {
+  flex: 1;
+  font-size: 250%;
+  text-align: center;
+  color: orange;
+  border-radius: 20px;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+}
+.touch {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+}
+.social-media {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  padding-top: 3%;
+}
+.i {
+  flex: 1;
+  font-size: x-large;
+  margin-right: 0%;
+  text-align: center;
+  padding: 3.5% 0;
+  background-color: rgb(135, 130, 130);
+  border-radius: 70px;
+  margin-right: 6px;
+}
+.i:hover {
+  background-color: orange;
+  scale: 1.02;
+  transition-duration: 0.7s;
+  cursor: pointer;
+}
+.space {
+  flex: 2;
+}
+.message {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 1%;
+}
+input {
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+  border: 0;
+  background-color: rgb(54, 54, 54);
+  color: rgb(213, 208, 208);
+}
+input::placeholder {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-left: 2%;
+  font-size: large;
+}
+.inputs {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+}
+.input {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.input input {
+  height: 50px;
+  margin-bottom: 3px;
+  width: 95%;
+}
+.msg input {
+  height: 150px;
+}
+.msg {
+  flex: 2;
+}
+.sendbtn {
+  flex: 0.7;
+  border: 3px solid orange;
+  color: white;
+  width: 40%;
+  text-align: center;
+  padding-top: 4%;
+  border-radius: 50px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: medium;
+  font-weight: 500;
+}
+.sendbtn:hover {
+  background-color: orange;
+  color: black;
+  cursor: pointer;
+}
+.projects {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0% 5%;
+  column-gap: 20px;
+  justify-content: space-between;
+  row-gap: 40px;
+}
+.projects a {
+  flex-basis: 430px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.image {
+  width: 100%;
+  border-radius: 20px;
+}
+.image:hover {
+  scale: 1.02;
+  transition-duration: 0.5s;
+  z-index: 50;
+  cursor: pointer;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  margin-top: 5%;
+  flex-basis: 150px;
+  text-align: center;
+  align-items: center;
+  font-size: 400%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 800;
+}
+.f {
+  color: white;
+}
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.content2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.skill-intro {
+  flex: 3;
+  color: white;
+  font-size: large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 180%;
+  padding: 5%;
+}
+.skills {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 200px;
+}
+.skill {
+  flex: 1;
+  position: relative;
+  margin: 8% 8% 50px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+.skill-name {
+  color: white;
+  position: absolute;
+  font-size: x-large;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.skill-name1 {
+  color: white;
+  position: absolute;
+  font-size: x-large;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.s_name {
+  color: white;
+  font-size: x-large;
+  position: absolute;
+  bottom: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+.introduction {
+  flex: 3;
+  display: flex;
+  flex-direction: row;
+  line-height: 300%;
+  margin: 5% 10%;
+}
+.content a {
+  flex: 1;
+  border: 3px solid orange;
+  padding: 0.7%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: medium;
+  font-weight: 500;
+  border-radius: 50px;
+  text-align: center;
+  margin: 3%;
+}
+.content a:hover {
+  background-color: orange;
+  transition-duration: 1s;
+  cursor: pointer;
+  color: black;
+}
+.bio {
+  flex: 1.5;
+  font-size: x-large;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+.contact {
+  color: white;
+}
+.photo {
+  flex-basis: 570px;
+  border-radius: 20px;
+}
+.img {
+  width: 100%;
+  height: 100%;
+}
+.a {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+}
+.acontact {
+  flex: 1;
+  padding: 5%;
+  padding-top: 5.5%;
+  margin-right: 12px;
+  background-color: orange;
+  color: black;
+  border-radius: 35px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: medium;
+  font-weight: 500;
+}
+.acontact:hover {
+  color: white;
+  border: 3px solid orange;
+  transition-duration: 1s;
+  background-color: black;
+}
+.aabout:hover {
+  color: black;
+  background-color: orange;
+  transition-duration: 1s;
+}
+.aabout {
+  flex: 1;
+  padding: 5%;
+  margin-right: 15px;
+  color: white;
+  border: 3px solid orange;
+  background-color: black;
+  border-radius: 35px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: medium;
+  font-weight: 500;
+}
+.connect i {
+  border: 3px solid white;
+  padding: 2.5%;
+  margin-top: 2%;
+  border-radius: 15px;
+  color: white;
+}
+.connect i:hover {
+  background-color: orange;
+  color: white;
+  transition-duration: 1s;
+}
+.intro {
+  flex-basis: 100px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  color: white;
+  margin: 10%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: x-large;
+}
+.intro p {
+  font-size: large;
+  line-height: 150%;
+}
+.intro > h1 {
+  color: rgb(255, 168, 7);
+}
+.sidebar {
+  position: fixed;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  height: 320px;
+  margin-top: calc(50vh - 160px);
+  margin-bottom: calc(50vh - 160px);
+  align-items: center;
+  right: 0%;
+  width: 80px;
+  z-index: 100;
+}
+.item {
+  flex: 1;
+  color: white;
+  background-color: orange;
+  /* box-sizing: border-box; */
+  align-content: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid black;
+  font-size: large;
+  text-align: center;
+  height: 80px;
+  width: 80px;
+}
+.item:hover,
+.item:active {
+  transition-duration: 1s;
+  background-color: black;
+  border-width: 3px;
+  cursor: pointer;
+  color: white;
+}
+.item i {
+  font-size: x-large;
+}
+.know:hover {
+  background-color: orange;
+  color: black;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+.text {
+  display: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  height: 100px;
+  color: orange;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+}
+.hidden {
+  width: calc(100% - 80px);
+}
+
+#my_skills {
+  margin-top: 100px;
+}
